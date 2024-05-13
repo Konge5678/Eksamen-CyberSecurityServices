@@ -5,6 +5,7 @@ import './index.css'
 import Background from './components/backround.jsx'
 import KomIgjen from './components/kom-igang.jsx'
 import Tilbud from './components/tilbud.jsx'
+import Ansatte from './components/ansatte.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,5 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Navbar />
     <KomIgjen />  
     <Tilbud />
+    <Ansatte />
   </React.StrictMode>,
 )
