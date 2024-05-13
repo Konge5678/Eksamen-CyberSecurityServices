@@ -1,13 +1,13 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import CSSLogo from "/CSSLogo.png";
 
 function Kart() {
     return (
         <div className="flex flex-col items-center justify-center">
             <h2 className="text-5xl text-white font-bold text-center mt-20">Her finner du oss</h2>
-            <div className='mb-6 mt-6' >
+            <div className='mb-6'>
+                <h1>Welcome to the LokasjonSide!</h1>
                 <MapContainer 
                     center={[60.80758436467838, 11.053091129300938]} 
                     zoom={13} 
@@ -19,7 +19,7 @@ function Kart() {
                     />
                     <Marker position={[60.80758436467838, 11.053091129300938]}>
                         <Popup>
-                            <img src={CSSLogo} alt="Logo" className="w-80" />
+                            A pretty CSS3 popup. <br /> Easily customizable.
                         </Popup>
                     </Marker>
                 </MapContainer>

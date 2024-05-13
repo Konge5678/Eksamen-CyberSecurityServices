@@ -12,7 +12,7 @@ function Tilbud() {
 ];
 
 return (
-    <div className="flex justify-center space-x-4 mt-20" style={{backgroundImage: 'url("path-to-your-image.jpg")'}}>
+    <div className="flex flex-wrap justify-center gap-4 mt-20" style={{backgroundImage: 'url("path-to-your-image.jpg")'}}>
         {cards.map((card, i) => (
             <div key={i} className="border border-gray-300 rounded-lg p-4 w-80 h-80 flex flex-row" style={{background: 'linear-gradient(to bottom, #102c30, #0b161a)', opacity: 0.8}}>
                 <div className="bg-gray-700 rounded-full p-2 h-12 w-12 flex items-center justify-center mb-4 mr-4">

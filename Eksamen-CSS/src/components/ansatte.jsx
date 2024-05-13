@@ -23,7 +23,7 @@ function Ansatte() {
             <p className="text-2xl text-gray-300 text-center max-w-2xl mx-auto leading-snug mt-12">Våre ansatte er eksperter innen Cyber Security og vil gi deg veiledingen og verktøyene du trenger for å holde
             bedriften din trygg på nett.</p>
         </div>
-            <div className="flex flex-wrap justify-center space-x-7 mt-20">
+            <div className="flex flex-wrap justify-center gap-7 mt-20">
                 {cards1.map((card, i) => (
                     <div key={i} className="border border-gray-300 bg-black rounded-lg p-4 w-80 h-80 flex flex-col items-center m-4" style={{background: 'linear-gradient(to bottom, #102c30, #0b161a)', opacity: 0.8}}>
                         <div className="w-48 h-48 relative mb-4">
@@ -34,7 +34,7 @@ function Ansatte() {
                     </div>
                 ))}
             </div>
-            <div className="flex flex-wrap justify-center space-x-7 mt-10">
+            <div className="flex flex-wrap justify-center gap-7 mt-10">
                 {cards2.map((card, i) => (
                     <div key={i} className="border border-gray-300 bg-black rounded-lg p-4 w-80 h-80 flex flex-col items-center m-4" style={{background: 'linear-gradient(to bottom, #102c30, #0b161a)', opacity: 0.8}} >
                         <div className="w-48 h-48 relative mb-4">
