@@ -3,7 +3,15 @@ import BgImage from "/waves.jpg";
 
 function Background() { 
     return (
-        <div className="absolute w-full h-full inset-0 z-negative" style={{backgroundImage: `url(${BgImage})`, backgroundRepeat: 'repeat'}}>
+        <div style={{
+            backgroundImage: `url(${BgImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            height: '100%',
+            width: '100%',
+            position: 'fixed',
+            zIndex: -1
+        }}>
         </div>
     )
 }

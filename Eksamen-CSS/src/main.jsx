@@ -8,8 +8,8 @@ import Tilbud from './components/tilbud.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar />
     <Background />
+    <Navbar />
     <KomIgjen />  
     <Tilbud />
   </React.StrictMode>,
