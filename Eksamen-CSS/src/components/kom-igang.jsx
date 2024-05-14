@@ -2,7 +2,7 @@ import React from "react";
 
 function KomIgjen() {
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div id="Om-oss" className="flex flex-col items-center justify-center">
             <h1 className="text-8xl text-white font-bold text-center mt-20">Cyber Security Services</h1>
             <p className="text-2xl text-gray-300 text-center max-w-2xl mx-auto leading-snug mt-12">Cyber Security Services er et amerikansk basert cybersikkerhetsselskap som leverer 
             tjenester og administrerer cyberrisiko på vegne av våre verdsatte distribusjons- og teknologipartnere.</p>

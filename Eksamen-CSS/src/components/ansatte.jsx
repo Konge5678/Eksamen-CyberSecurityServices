@@ -17,7 +17,7 @@ function Ansatte() {
     ];
     
     return (
-        <div>
+        <div id="Ansatte">
             <div className="flex flex-col items-center justify-center">
             <h1 className="text-6xl text-white font-bold text-center mt-20">Ansatte</h1>
             <p className="text-2xl text-gray-300 text-center max-w-2xl mx-auto leading-snug mt-12">Våre ansatte er eksperter innen Cyber Security og vil gi deg veiledingen og verktøyene du trenger for å holde

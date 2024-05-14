@@ -4,14 +4,13 @@ import 'leaflet/dist/leaflet.css';
 
 function Kart() {
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div id="Finn-oss" className="flex flex-col items-center justify-center px-4 sm:px-0">
             <h2 className="text-5xl text-white font-bold text-center mt-20">Her finner du oss</h2>
-            <div className='mb-6'>
-                <h1>Welcome to the LokasjonSide!</h1>
+            <div className='mb-6 mt-6' style={{ width: '100%', maxWidth: '600px', height: '400px' }}>
                 <MapContainer 
                     center={[60.80758436467838, 11.053091129300938]} 
                     zoom={13} 
-                    style={{ height: "400px", width: "600px", borderRadius: "15px" }}
+                    style={{ height: "100%", width: "100%", borderRadius: "15px" }}
                 >
                     <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
