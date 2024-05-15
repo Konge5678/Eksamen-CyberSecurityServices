@@ -1,12 +1,15 @@
 import React from "react";
 import CSSLogo from "/CSSLogo.png";
 import { SocialIcon } from 'react-social-icons';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
         <nav className="flex items-center justify-between p-6 px-4 sm:px-36" style={{background: 'linear-gradient(to bottom, #03080c, #0b2428)', opacity: 0.8}}>
             <div className="ml-5 w-24 sm:w-36">
-                <img className="w-full" src={CSSLogo} alt="Logo" />
+                <Link to="/">
+                    <img  className="w-full" src={CSSLogo} alt="Logo" />
+                </Link>
             </div>
             <ul className="gap-4 hidden lg:flex ">
                 <li><a href="#Om-oss" className="text-gray-300 hover:text-blue-300">Om oss</a></li>

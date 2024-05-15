@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Navbar from './components/navbar.jsx' 
 import './index.css'
 import Background from './components/backround.jsx'
@@ -10,17 +11,21 @@ import Kart from './components/kart.jsx'
 import Footer from './components/footer.jsx'
 import CookieConsent from './components/cookies.jsx'
 import Kontakt from './components/kontakt.jsx'
+import KontaktSkjema from './components/skjema.jsx'
+
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Background />
-    <Navbar />
-    <KomIgjen />  A
-    <Tilbud />
-    <Ansatte />
-    <Kart /> 
-    <Kontakt/> 
-    <Footer />
-    <CookieConsent />
+    <Router>
+      <Background />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<><KomIgjen /><Tilbud /><Ansatte /><Kart /><Kontakt /></>} />
+        <Route path="/subpage" element={<KontaktSkjema />} />
+      </Routes>
+      <Footer />
+      <CookieConsent />
+    </Router>
   </React.StrictMode>,
 )
